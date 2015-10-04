@@ -10,9 +10,9 @@ class Product implements ProductInterface
     private $productId;
     private $currencyLocalizer;
 
-    public function __construct(ORM $orm, CurrencyLocalizer $currencyLocalizer, $productId = 0)
+    public function __construct(ORM $repository, CurrencyLocalizer $currencyLocalizer, $productId = 0)
     {
-        $this->orm = $orm;
+        $this->repository = $repository;
         $this->currencyLocalizer = $currencyLocalizer;
         $this->setProductId($productId);
     }
@@ -31,7 +31,7 @@ class Product implements ProductInterface
 
     private function getPrice()
     {
-        $product = $this->orm->get(
+        $product = $this->repository->get(
             'products', ['productId' => $this->productId]
         );
 

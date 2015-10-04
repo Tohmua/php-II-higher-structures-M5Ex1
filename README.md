@@ -2,7 +2,7 @@
 Create a class for an e-commerce application
 Give it a constructor with 3 properties
 Write at least one additional function
-Instantiate class to make sure it works as expected
+Instantiate class to make sure it works as expected (Note: Check the spec/App/Products/ProductSpec.php for this)
 
 # Info
 This is module 5 exercise 1 of the php II Higher Structures course by Oliver Musgrove-Wethey

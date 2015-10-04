@@ -12,7 +12,7 @@ gulp.task('phpspec', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch('src/**/*.php', ['phpspec']);
+  gulp.watch(['src/**/*.php', 'spec/**/*.php'], ['phpspec']);
 });
 
 function notifyMessage(status, pluginName, override) {

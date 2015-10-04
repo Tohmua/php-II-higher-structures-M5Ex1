@@ -1,0 +1,8 @@
+{
+    "devDependencies" : {
+        "gulp-phpspec" : "*",
+        "gulp-notify" : "*",
+        "lodash" : "*",
+        "gulp-watch" : "*"
+    }
+}

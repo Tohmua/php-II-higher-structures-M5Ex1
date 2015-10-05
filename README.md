@@ -13,6 +13,8 @@ This is module 5 exercise 1 of the php II Higher Structures course by Oliver Mus
 # Install
 $ composer install
 
+$ npm install -g gulp
+
 $ npm install
 
 # Automated test running

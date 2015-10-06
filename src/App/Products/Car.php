@@ -32,9 +32,9 @@ class Car implements Product
     private function getPrice()
     {
         $product = $this->repository->get(
-            'products', ['productId' => $this->productId]
+            'car', ['productId' => $this->productId]
         );
 
-        return $product->price;
+        return $product->price();
     }
 }

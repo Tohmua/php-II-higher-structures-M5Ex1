@@ -26,13 +26,14 @@ class FakeORM implements ORM {
         return $this->$table($fields);
     }
 
-    private function products(array $fields) {
+    private function car(array $fields) {
         if (!isset($fields['productId']) || !array_key_exists($fields['productId'], $this->products)) {
-            throw new \Exception('Fake ORM product not found');
+            throw new \Exception('Fake ORM car id not found');
         }
 
-        $products = new \stdClass();
-        $products->price = $this->products[$fields['productId']]['price'];
-        return $products;
+        return RepositoryFactory::get(
+            'car',
+            ['price' => $this->products[$fields['productId']]['price']]
+        );
     }
 }

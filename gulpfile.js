@@ -22,7 +22,7 @@ function notifyMessage(status, pluginName, override) {
         icon:    __dirname + '/node_modules/gulp-' + pluginName +'/assets/test-' + status + '.png'
     };
     options = _.merge(options, override);
-  return options;
+    return options;
 }
 
 gulp.task('default', ['phpspec', 'watch']);

@@ -7,7 +7,7 @@ use Prophecy\Argument;
 use App\ORM\FakeORM;
 use App\CurrencyLocalizer\GBPCurrencyLocalizer;
 
-class ProductSpec extends ObjectBehavior
+class CarSpec extends ObjectBehavior
 {
     public function let()
     {
@@ -18,7 +18,7 @@ class ProductSpec extends ObjectBehavior
 
     function it_is_initializable()
     {
-        $this->shouldHaveType('App\Products\Product');
+        $this->shouldHaveType('App\Products\Car');
     }
 
     public function it_returns_price_550_for_product_0()

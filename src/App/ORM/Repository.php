@@ -2,4 +2,9 @@
 
 namespace App\ORM;
 
-interface Repository {}
+interface Repository
+{
+    public function persist();
+
+    public function destroy();
+}
